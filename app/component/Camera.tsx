@@ -63,7 +63,7 @@ const Camera: React.FC = () => {
       </div>
 
       {/* Tulisan "Please look Front a camera" */}
-      <div className="absolute bottom-24 transform w-full text-white text-center">
+      <div className="absolute bottom-20 transform w-full text-white text-center">
         <div className='text-base sm:text-lg lg:text-xl xl:text-2xl'>Please look Front a camera</div>
       </div>
 
@@ -71,7 +71,7 @@ const Camera: React.FC = () => {
       {/* Tombol Ambil Foto */}
       <button
         onClick={capture}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 px-4 py-2 text-white bg-gradient-to-l from-sky-950 to-cyan-800 rounded-[20px] shadow w-3/4 sm:w-1/2 lg:w-1/3 xl:w-1/4 h-[54px]"
+        className="absolute bottom-4 left-1/2 transform -translate-x-1/2 px-4 py-2 text-white bg-gradient-to-l from-sky-950 to-cyan-800 rounded-[20px] shadow w-3/4 sm:w-1/2 lg:w-1/3 xl:w-1/4 h-[54px]"
       >
         Take Photo
       </button>
