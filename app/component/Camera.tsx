@@ -57,7 +57,7 @@ const Camera: React.FC = () => {
       ></div>
 
       {/* Tulisan "Face Login" */}
-      <div className="absolute top-8 w-full text-white text-center sm:top-1/3 mt-8 sm:mt-12 lg:mt-16 xl:mt-20">
+      <div className="absolute top-6 w-full text-white text-center sm:top-1/3 mt-8 sm:mt-12 lg:mt-16 xl:mt-20">
         <div className='text-lg sm:text-2xl lg:text-3xl xl:text-4xl'>Face Login</div>
         <div className='text-base sm:text-lg lg:text-xl xl:text-2xl'>Add face recognition into account</div>
       </div>
