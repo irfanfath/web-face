@@ -1,39 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Webcam from 'react-webcam';
 
 const Camera: React.FC = () => {
   const [imageSrc, setImageSrc] = useState<string | null>(null);
   const webcamRef = React.useRef<Webcam>(null);
 
-  const [videoConstraints, setVideoConstraints] = useState<MediaTrackConstraints | boolean>({
+  const videoConstraints: MediaTrackConstraints | boolean = {
     width: { ideal: 1280 },
     height: { ideal: 720 },
     facingMode: 'user',
-  });
-
-  useEffect(() => {
-    const updateVideoConstraints = () => {
-      const screenWidth = window.innerWidth;
-      const screenHeight = window.innerHeight;
-
-      setVideoConstraints({
-        width: { ideal: screenWidth },
-        height: { ideal: screenHeight },
-        facingMode: 'user',
-      });
-    };
-
-    // Panggil fungsi pertama kali untuk mengatur videoConstraints sesuai dengan ukuran layar saat ini
-    updateVideoConstraints();
-
-    // Tambahkan event listener untuk mengupdate videoConstraints saat ukuran layar berubah
-    window.addEventListener('resize', updateVideoConstraints);
-
-    // Cleanup event listener pada componentWillUnmount
-    return () => {
-      window.removeEventListener('resize', updateVideoConstraints);
-    };
-  }, []);
+  };
 
   const capture = async () => {
     const screenshot = webcamRef.current?.getScreenshot();
