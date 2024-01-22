@@ -1,6 +1,6 @@
 "use client";
 
-import WasmFeatureDetectComponent from '@/utils/wasmFeatureDetect';
+import WasmFeatureDetectComponent from '@/utils/wasmFeatureDetection';
 // import Camera from "./component/Camera";
 // import PicoComponent from "./component/PicoComponent";
 
