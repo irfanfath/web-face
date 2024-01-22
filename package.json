@@ -7,8 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "http-server": "http-server out -p 3000"
-  },
+    "http-server": "http-server out -p 3000",
+    "dev-with-server": "npm run dev & npm run http-server"
+  },  
   "dependencies": {
     "next": "14.0.1",
     "react-webcam": "^7.2.0"
