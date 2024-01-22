@@ -98,7 +98,7 @@ const IndexPage: React.FC = () => {
 
   return (
     <div>
-      <h1>ncnn webassembly scrfd testestes</h1>
+      <h1>ncnn webassembly scrfd oke</h1>
       <div>
         <button style={{ height: '48px' }}>
           Switch Camera
