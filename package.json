@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "http-server": "http-server out -p 3000"
   },
   "dependencies": {
     "next": "14.0.1",
