@@ -1,6 +1,6 @@
 "use client";
 
-import WasmFeatureDetectComponent from '@/utils/wasmFeatureDetection';
+import wasmFeatureDetection from '@/utils/wasmFeatureDetection';
 // import Camera from "./component/Camera";
 // import PicoComponent from "./component/PicoComponent";
 
@@ -60,7 +60,7 @@ const IndexPage: React.FC = () => {
     };
 
     const ncnnScrfd = () => {
-      WasmFeatureDetectComponent.threads().then((threadsSupported: any) => {
+      wasmFeatureDetection.threads().then((threadsSupported: any) => {
         if (threadsSupported) {
           // Lakukan sesuatu jika thread didukung
           // ...

@@ -1,4 +1,4 @@
-interface WasmFeatureDetect {
+interface WasmFeatureDetection {
     bigInt: () => Promise<boolean>;
     bulkMemory: () => Promise<boolean>;
     exceptions: () => Promise<boolean>;
@@ -12,7 +12,7 @@ interface WasmFeatureDetect {
     threads: () => Promise<boolean>;
 }
 
-const wasmFeatureDetect: WasmFeatureDetect = {
+const wasmFeatureDetection: WasmFeatureDetection = {
     bigInt: async () => {
         try {
             const result = await WebAssembly.instantiate(new Uint8Array([0, 97, 115, 109, 1, 0, 0, 0, 1, 6, 1, 96, 1, 126, 1, 126, 3, 2, 1, 0, 7, 5, 1, 1, 98, 0, 0, 10, 6, 1, 4, 0, 32, 0, 11]));
@@ -63,4 +63,4 @@ const wasmFeatureDetect: WasmFeatureDetect = {
     },
 };
 
-export default wasmFeatureDetect;
+export default wasmFeatureDetection;
